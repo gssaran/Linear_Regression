@@ -78,6 +78,8 @@ fprintf('\n');
 % ====================== YOUR CODE HERE ======================
 price = 0; 
 test=[1; 1650; 3];
+test(2:3,1)=test(2:3,1)-mu';
+test(2:3,1)=test(2:3,1)./sigma';
 price=theta'*test;
 
 fprintf(['Predicted price of a 1650 sq-ft, 3 br house ' ...
